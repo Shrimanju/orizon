@@ -1,0 +1,55 @@
+#headers {
+	padding: 50px 0;
+}
+.imaageright{
+    /* float: right; */
+	width: 80%;
+	height: 50%;
+}
+.headermain{
+padding-left:0px;
+}
+.headerheading{
+    width: 100%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 103.69%;
+color: #1F2E35;
+}
+.headerheadingblue{
+    font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 90.69%;
+color: rgb(87, 87, 241);
+}
+.headerheadingpara{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    
+    color: #30444E;
+}
+.headerbutton{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+    background-color: rgb(87, 87, 241);
+    padding:2px 10px 2px 10px;
+    color: #FFFFFF;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
