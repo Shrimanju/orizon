@@ -4,8 +4,28 @@ import {
   Link,
 } from "react-router-dom";
 import '../navigation/navigation.css';
+import { render } from "react-dom";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+import Login from '../login/login.js'
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center"
+};
 export class Navigation extends Component {
+  state = {
+    open: false
+  };
+
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
+
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
   render() {
+    const { open } = this.state;
     return (
 
       <nav id="menu" className=" navbar-default navbar-static-top">
@@ -80,9 +100,15 @@ export class Navigation extends Component {
                 </a>
               </li>
               <li>
-                <a href="#" className="page-scroll">
+                <a href="#" className="page-scroll" onClick={this.onOpenModal}>
                  Login
+                
                 </a>
+               <div className="modal1">
+        <Modal open={open} onClose={this.onCloseModal}className="modal">
+        <Login/>
+        </Modal>
+        </div>
               </li>
              
 
