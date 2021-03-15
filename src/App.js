@@ -7,7 +7,7 @@ import Footer from './components/Footer/footer'
 import Aboutfooter from './components/aboutfooter/aboutfooter'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Navigation from '../src/components/navigation/navigation'
-
+import Carousel from '../src/components/carousel/carousel'
 export class App extends Component {
   state = {
     landingPageData: {},
@@ -33,6 +33,8 @@ export class App extends Component {
                   <Header/>
                   <Welcomeorg/>
                   <Testimonials data={this.state.landingPageData.Testimonials} />
+                  <Carousel/>
+                  
                   <Footer />
                   <Aboutfooter />
                 </div>

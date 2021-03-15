@@ -9,6 +9,7 @@ import Testimonials from './testimonials';
 import Team from './Team';
 import Contact from './contact';
 import $ from 'jquery';
+import Carousel from './carousel/carousel'
 
 export class App extends Component {
   state = {
@@ -42,6 +43,7 @@ export class App extends Component {
         <About  data={this.state.resumeData.About}/>
         <Services  data={this.state.resumeData.Services}/>
         <Gallery />
+        <Carousel/>
         <Testimonials  data={this.state.resumeData.Testimonials}/>
         <Team  data={this.state.resumeData.Team}/>
         <Contact  data={this.state.resumeData.Contact}/>
